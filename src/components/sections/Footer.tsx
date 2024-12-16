@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { motion , AnimatePresence } from "framer-motion"
-import { Twitter, Linkedin, Youtube, Github } from 'lucide-react'
+import { Twitter, Linkedin, Instagram, Github } from 'lucide-react'
 import Image from 'next/image'
 import pillowLogo from '@/assets/pillow.svg';
 import { useToast } from "@/hooks/use-toast";
@@ -184,17 +184,17 @@ export function Footer() {
                         © {new Date().getFullYear()} PillowConnect, Inc. All rights reserved.
                     </p>
                     <div className="flex items-center space-x-6">
-                        <Link href="https://twitter.com" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
+                        <Link href="https://x.com/PillowConnect" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
                             <Twitter className="w-5 h-5" />
                             <span className="sr-only">Twitter</span>
                         </Link>
-                        <Link href="https://linkedin.com" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
+                        <Link href=" https://www.linkedin.com/company/pillow-connect/?viewAsMember=true" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
                             <Linkedin className="w-5 h-5" />
                             <span className="sr-only">LinkedIn</span>
                         </Link>
-                        <Link href="https://youtube.com" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
-                            <Youtube className="w-5 h-5" />
-                            <span className="sr-only">YouTube</span>
+                        <Link href="https://www.instagram.com/pillow.connect/" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
+                            <Instagram className="w-5 h-5" />
+                            <span className="sr-only">Instagram</span>
                         </Link>
                         <Link href="https://github.com" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
                             <Github className="w-5 h-5" />
