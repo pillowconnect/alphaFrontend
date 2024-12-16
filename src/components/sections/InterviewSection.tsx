@@ -76,8 +76,8 @@ export function InterviewSection() {
     }, [messages.length])
 
     return (
-        <section className="py-12 md:py-24 px-4 md:px-8 w-3/4 mx-auto overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+        <section className="py-8 md:py-24 px-4 md:px-8 w-full md:w-3/4 mx-auto overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 {/* Left Section */}
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -86,13 +86,13 @@ export function InterviewSection() {
                     transition={{ duration: 0.5 }}
                     className="max-w-xl"
                 >
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
                         Apply and work from{' '}
                         <span className="bg-gradient-to-r from-[#02577a] to-[#0288bc] text-transparent bg-clip-text">
                             anywhere
                         </span>
                     </h2>
-                    <p className="text-base md:text-lg lg:text-xl text-black mb-8">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black mb-6 md:mb-8">
                         We believe Freedom is the Future of Employment and that what we&apos;re building is the future of talent.
                     </p>
                     <AnimatePresence mode="wait">
@@ -104,7 +104,7 @@ export function InterviewSection() {
                                 exit={{ opacity: 0, y: -20 }}
                             >
                                 <Button
-                                    className="bg-gradient-to-r from-[#0061f2] to-[#02577a] hover:from-[#02577a] hover:to-[#003366] text-white text-lg py-4 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105"
+                                    className="bg-gradient-to-r from-[#0061f2] to-[#02577a] hover:from-[#02577a] hover:to-[#003366] text-white text-sm sm:text-base md:text-lg py-3 sm:py-4 px-4 sm:px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 w-full sm:w-auto"
                                     onClick={() => setShowEmailInput(true)}
                                 >
                                     Try AI Interview - (Join Waitlist)
@@ -125,12 +125,12 @@ export function InterviewSection() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
-                                    className="flex-grow rounded-full py-4 px-6 text-black border-[#02577a]/20 focus:border-[#02577a] focus:ring-[#02577a]"
+                                    className="flex-grow rounded-full py-3 sm:py-4 px-4 sm:px-6 text-sm sm:text-base text-black border-[#02577a]/20 focus:border-[#02577a] focus:ring-[#02577a]"
                                 />
                                 <Button
                                     type="submit"
                                     disabled={isLoading}
-                                    className="bg-gradient-to-r from-[#0061f2] to-[#02577a] hover:from-[#02577a] hover:to-[#003366] text-white text-lg py-4 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105"
+                                    className="bg-gradient-to-r from-[#0061f2] to-[#02577a] hover:from-[#02577a] hover:to-[#003366] text-white text-sm sm:text-base md:text-lg py-3 sm:py-4 px-4 sm:px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 w-full sm:w-auto"
                                 >
                                     {isLoading ? "Joining..." : "Join Waitlist"}
                                 </Button>
@@ -145,7 +145,7 @@ export function InterviewSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="relative w-full max-w-md mx-auto"
+                    className="relative w-full max-w-sm sm:max-w-md mx-auto mt-8 md:mt-0"
                 >
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#d4f0fc] via-[#eaf9ff] to-[#ffffff]">
                         {/* Chat Header */}
@@ -177,7 +177,7 @@ export function InterviewSection() {
                                 animate="animate"
                                 exit="exit"
                                 transition={{ duration: 0.5 }}
-                                className="bg-white rounded-lg p-3 max-w-[80%] text-center shadow-md text-sm md:text-base"
+                                className="bg-white rounded-lg p-2 sm:p-3 max-w-[80%] text-center shadow-md text-xs sm:text-sm md:text-base"
                             >
                                 {messages[currentMessageIndex]}
                             </motion.div>
