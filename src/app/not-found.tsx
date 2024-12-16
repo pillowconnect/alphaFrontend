@@ -1,5 +1,3 @@
-
-
 import Link from 'next/link';
 import Image from 'next/image';
 import pillowLogo from '@/assets/pillow.svg';
