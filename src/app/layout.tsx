@@ -18,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/pillow.svg" sizes="any" />
+      <head>
+        <meta name="description" content="Connecting global talent to the world's best Employers." />
+        <meta property="og:title" content="Pillow Connect" />
+        <meta property="og:description" content="Transform your hiring process with AI-driven talent matching. Connect with top professionals worldwide instantly." />
+      </head>
       <body
         className={`${inter.className} antialiased`}
       >
