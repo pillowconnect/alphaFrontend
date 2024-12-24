@@ -3,12 +3,13 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { motion , AnimatePresence } from "framer-motion"
-import { Twitter, Linkedin, Instagram, Github } from 'lucide-react'
+import { Twitter, Linkedin, Instagram, Github , } from 'lucide-react'
 import Image from 'next/image'
 import pillowLogo from '@/assets/pillow.svg';
 import { useToast } from "@/hooks/use-toast";
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
+import discord from '@/assets/discord-outline-svgrepo-com.svg'
 export function Footer() {
     const { toast } = useToast();
     const [showEmailInput, setShowEmailInput] = useState(false);
@@ -199,6 +200,10 @@ export function Footer() {
                         <Link href="https://github.com" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
                             <Github className="w-5 h-5" />
                             <span className="sr-only">GitHub</span>
+                        </Link>
+                        <Link href="https://discord.gg/Q9cYFvM55f" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
+                            <Image src={discord} alt="Discord" width={20} height={30} />
+                            <span className="sr-only">Discord</span>
                         </Link>
                     </div>
                 </div>
