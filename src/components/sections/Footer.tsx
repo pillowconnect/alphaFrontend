@@ -197,7 +197,7 @@ export function Footer() {
                             <Instagram className="w-5 h-5" />
                             <span className="sr-only">Instagram</span>
                         </Link>
-                        <Link href="https://github.com" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
+                        <Link href="https://github.com/orgs/pillowconnect" className="text-[#02577a]/60 hover:text-[#02577a] transition-colors">
                             <Github className="w-5 h-5" />
                             <span className="sr-only">GitHub</span>
                         </Link>
