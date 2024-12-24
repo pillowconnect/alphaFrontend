@@ -16,7 +16,7 @@ export async function sendWelcomeEmail(email: string) {
   <p>We’re creating <strong>THE AI-powered talent marketplace</strong> where talent seekers and hiring individuals vibe, connect, and make magic happen. Don’t miss out – <strong>join our community on WhatsApp</strong> to stay in the loop, hear from us early, and unlock all the premium features first.</p>
 
   <p style="font-size: 1.1em; margin: 20px 0;">
-    <strong>👉 <a href="https://chat.whatsapp.com/Jh0iYFfkMDS1CWF6w5Y42T" style="color: #02577a; text-decoration: none;">Join Our WhatsApp Community</a></strong>
+    <strong>👉 <a href="https://discord.gg/Q9cYFvM55f" style="color: #02577a; text-decoration: none;">Join Our Discord Community</a></strong>
   </p>
 
   <h3 style="color: #02577a;">🛠 For Talent Seekers:</h3>
@@ -40,7 +40,7 @@ export async function sendWelcomeEmail(email: string) {
   <p style="font-size: 1.1em; margin: 20px 0;">Ready to see the future of talent hiring and collaboration? Let’s make it happen. 🚀</p>
 
   <p style="font-size: 1.1em;">
-    <strong>👉 <a href="https://chat.whatsapp.com/Jh0iYFfkMDS1CWF6w5Y42T" style="color: #02577a; text-decoration: none;">Join Our WhatsApp Community</a></strong>
+    <strong>👉 <a href="https://discord.gg/Q9cYFvM55f" style="color: #02577a; text-decoration: none;">Join Our Discord Community</a></strong>
   </p>
 
   <p style="margin-top: 40px;">Catch you inside,</p>
